@@ -56,10 +56,10 @@ h1 {
   /* text-decoration: dashed; */
 }
 h1 strong {
-  color: #026fff;
+  color: #0BE808;
 }
 h2 {
-  color: #026fff;
+  color: #0BE808;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
@@ -83,7 +83,6 @@ h2 {
 
 .hero-image{
   object-fit: cover;
-  object-position: 50% 20%;
 }
 
 
@@ -269,7 +268,7 @@ figure {
 }
 
 .event-url {
-  color: #056fff;
+  color: #2AF312;
   border: 1px solid;
   padding: 5px 20px;
   text-decoration: none;
@@ -277,7 +276,7 @@ figure {
 }
 
 .contact {
-  background-color: #056fff;
+  background-color: #2AF312;
   color: white;
   height: 150px;
   display: flex;
@@ -285,6 +284,7 @@ figure {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: .3em 0;
+  filter: opacity(90%);
 }
 
 .social {
@@ -332,6 +332,8 @@ figure {
   border-radius: 5px;
   width: 100px;
   margin-top: 10px;
+  cursor: pointer;
+  
 }
 
 .form-email h3 { 
@@ -377,7 +379,10 @@ figure {
     bottom: 0;
     left: 0;
     width: 100%;
-    opacity: .3;
+    /* opacity: .3; */
+    object-position: 50% 20%;
+    filter: opacity(80%) blur(1px) brightness(40%);
+
 
   }
 }
