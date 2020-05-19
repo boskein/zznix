@@ -1,2 +1,2 @@
-# atjazz
-Proyecto realizado 
+# Trix
+Versión 2
