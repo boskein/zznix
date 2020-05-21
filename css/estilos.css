@@ -28,6 +28,94 @@ valores */
 /* background gris = #1b2127 */
 /* celeste = #026fff */
 
+
+/* Font menu icon */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../assets/fonts/menu-fonts/icomoon.eot?2fgjle');
+  src:  url('../assets/fonts/menu-fonts/icomoon.eot?2fgjle#iefix') format('embedded-opentype'),
+    url('../assets/fonts/menu-fonts/icomoon.ttf?2fgjle') format('truetype'),
+    url('../assets/fonts/menu-fonts/icomoon.woff?2fgjle') format('woff'),
+    url('../assets/fonts/menu-fonts/icomoon.svg?2fgjle#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+
+/* Font social icon */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../assets/fonts/social-fonts/');
+  src:  url('../assets/fonts/social-fonts/#iefix') format('embedded-opentype'),
+    url('../assets/fonts/social-fonts/icomoon.ttf?uxdqsw') format('truetype'),
+    url('../assets/fonts/social-fonts/icomoon.woff?uxdqsw') format('woff'),
+    url('../assets/fonts/social-fonts/icomoon.svg?uxdqsw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  
+}
+
+[class^="icon-social"], [class*=" icon-social"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 2.5em;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-social__soundcloud:before {
+  content: "\e900";
+}
+.icon-social__github:before {
+  content: "\e901";
+}
+.icon-social__twitter:before {
+  content: "\e902";
+}
+.icon-social__instagram:before {
+  content: "\e903";
+}
+.icon-social__facebook:before {
+  content: "\e904";
+}
+
+
+
+
+
+
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
@@ -288,6 +376,7 @@ figure {
 }
 
 .social {
+  text-align: center;
 }
 
 .social-link {
@@ -298,7 +387,7 @@ figure {
   background-size: 50px 50px;
 }
 
-.social-link.twitter {
+/* .social-link.twitter {
   background-image: url('../images/twitter.svg');
 }
 .social-link.facebook {
@@ -309,7 +398,7 @@ figure {
 }
 .social-link.instagram {
   background-image: url('../images/instagram.svg');
-}
+} */
 
 
 .form-email input {
@@ -352,6 +441,34 @@ figure {
   height: inherit;
   flex-wrap: inherit;
   
+}
+
+.footer p span::before{
+  content: '| ';
+}
+
+.html-video{
+  width: 100%;
+  height: auto;
+  /* max-width: 100%; */
+}
+
+.youtube-video{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.flexible-video{
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  background: transparent;
+  position: relative;
 }
 
 /* Desktop First: empezar desde el media queri más grande */
@@ -513,6 +630,13 @@ figure {
     width: auto;
   }
 
+  .footer p span{
+    display: block;
+  }
+  
+  .footer p span::before{
+    content: none;
+  }
 
   
 }
