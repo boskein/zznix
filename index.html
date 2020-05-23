@@ -18,13 +18,13 @@
     </style> -->
   </head>
   <body>
-    <i class="icon-menu"></i>
+    <i class="icon-menu burger-button" id="menuButton"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
-          <a href=""><img src="assets/svg/icon-header.svg" height="50" alt="Logo de http://jsxnis.com" /></a>
+          <a href="/"><img src="assets/svg/icon-header.svg" height="50" alt="Logo de http://jsxnis.com" /><span class="title-page">Trix</span></a>
         </figure>
-        <nav class="menu">
+        <nav class="menu" id="menu">
           <ol> 
             <li>
               <a class="link" href="#portafolio">Portafolio</a>
@@ -168,5 +168,15 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const menuButton = document.getElementById('menuButton');
+      const menu = document.getElementById('menu');
+
+      menuButton.addEventListener('click', function(){
+        menu.classList.toggle('is-active')
+      })
+
+    </script>
   </body>
 </html>

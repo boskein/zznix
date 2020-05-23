@@ -85,9 +85,7 @@ valores */
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  color: whitesmoke;
-  text-decoration: none;
-  font-size: 2.5em;
+
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -171,6 +169,13 @@ h2 {
 
 .hero-image{
   object-fit: cover;
+}
+
+.title-page{
+  padding-left:.2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: hsl(100, 93%, 47%);
 }
 
 
@@ -335,7 +340,7 @@ figure {
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background: #f4fbff;
+  background: rgb(244, 251, 255);
 }
 .event img {
   width: 480px;
@@ -385,6 +390,9 @@ figure {
   height: 50px;
   margin: 0 10px;
   background-size: 50px 50px;
+  font-size: 2.5em;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 /* .social-link.twitter {
@@ -471,6 +479,23 @@ figure {
   position: relative;
 }
 
+
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(27, 33, 39, .8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 1000;
+  left: 5px;
+  top: 5px;
+  color: white;
+
+}
+
 /* Desktop First: empezar desde el media queri más grande */
 @media screen and (max-width: 1024px){
   .container{
@@ -517,7 +542,9 @@ figure {
     align-items: center;
   }
   */
-
+  .burger-button{
+    display: block;
+  }
   
   .header{
     display: block;
@@ -537,6 +564,33 @@ figure {
   
   .header a{
     justify-content: center;
+  }
+  .header .menu a{
+    height: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: .5em;
+    text-align: center;
+  }
+
+  .menu{
+    position: fixed;
+    z-index: 500;
+    background-color:  rgba(11, 232, 8,.9);
+    top: 0;
+    left: -100vw;
+    bottom: 0;
+    /* height: 100vh; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left .3s ease-in;
+  }
+
+  .menu.is-active{
+    left: 0;
   }
 
   .project {
