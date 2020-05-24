@@ -565,6 +565,9 @@ figure {
   .header a{
     justify-content: center;
   }
+  .logo > a{
+    padding: .5em;
+  }
   .header .menu a{
     height: 40px;
     font-size: 2em;
@@ -577,7 +580,7 @@ figure {
   .menu{
     position: fixed;
     z-index: 500;
-    background-color:  rgba(11, 232, 8,.9);
+    background-color:  rgba(29, 37, 44,.9);
     top: 0;
     left: -100vw;
     bottom: 0;
