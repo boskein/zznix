@@ -183,6 +183,7 @@ h2 {
   background: #fafafa;
   padding: 20px;
   /* background: red; */
+  
 }
 
 .project {
@@ -211,6 +212,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* box-shadow: 1px 1px 3px 1px gray; */
 }
 .project-course,
 .project-date,
@@ -287,12 +289,15 @@ figure {
 .header ol li {
   height: inherit;
 }
+
+
 .header a {
   display: flex;
   align-items: center;
   height: inherit;
   padding: 0 10px;
 }
+
 
 .flexbox {
   display: flex;
@@ -496,8 +501,27 @@ figure {
 
 }
 
+.wrapper{
+  border-left: 10px solid #0BE808;
+  padding-right: 10px;
+}
+
+.header ol li a:hover{
+  color: #0BE808;
+}
+
+
+
 /* Desktop First: empezar desde el media queri más grande */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
+  .event-list-title{
+    margin-left: 10px;
+    
+  }
+  .portfolio{
+    padding: 10px;
+  }
+
   .container{
     padding: 0 1em;
   }
@@ -529,6 +553,7 @@ figure {
   }
 }
 
+
 @media screen and (max-width: 767px){
   /* .header{
     height: auto;   
@@ -542,6 +567,11 @@ figure {
     align-items: center;
   }
   */
+
+  h2{
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
   .burger-button{
     display: block;
   }
@@ -576,6 +606,8 @@ figure {
     margin-bottom: .5em;
     text-align: center;
   }
+
+
 
   .menu{
     position: fixed;
@@ -622,7 +654,7 @@ figure {
     font-size: 1em;
   }
   .project-description{
-    font-size: .8em; 
+    font-size: 1em; 
   }
   .project-course, .project-date, .project-description{
     margin: .4em 0;
@@ -667,7 +699,7 @@ figure {
 
 
   .project-details {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .contact{
@@ -693,6 +725,11 @@ figure {
   
   .footer p span::before{
     content: none;
+  }
+
+  .social-link{
+    width: 40px;
+    height: 40px;
   }
 
   
