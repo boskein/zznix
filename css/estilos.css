@@ -27,6 +27,9 @@ valores */
 /* gris claro = #626262 */
 /* background gris = #1b2127 */
 /* celeste = #026fff */
+:root {
+  --color-theme: #026fff
+}
 
 
 /* Font menu icon */
@@ -142,10 +145,10 @@ h1 {
   /* text-decoration: dashed; */
 }
 h1 strong {
-  color: #0BE808;
+  color: var(--color-theme);
 }
 h2 {
-  color: #0BE808;
+  color: var(--color-theme);
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
@@ -175,7 +178,7 @@ h2 {
   padding-left:.2em;
   font-size: 1.5em;
   font-weight: bold;
-  color: hsl(100, 93%, 47%);
+  color: var(--color-theme);
 }
 
 
@@ -366,7 +369,7 @@ figure {
 }
 
 .event-url {
-  color: #2AF312;
+  color: var(--color-theme);
   border: 1px solid;
   padding: 5px 20px;
   text-decoration: none;
@@ -374,7 +377,7 @@ figure {
 }
 
 .contact {
-  background-color: #2AF312;
+  background-color: var(--color-theme);
   color: white;
   height: 150px;
   display: flex;
@@ -502,15 +505,19 @@ figure {
 }
 
 .wrapper{
-  border-left: 10px solid #0BE808;
+  border-left: 10px solid var(--color-theme);
   padding-right: 10px;
 }
 
 .header ol li a:hover{
-  color: #0BE808;
+  color: var(--color-theme);
 }
 
 
+.contacto_email::after {
+  content: ' drakembite@gmail.com';
+  font-weight: 700;
+}
 
 /* Desktop First: empezar desde el media queri más grande */
 @media screen and (max-width: 1023px){
